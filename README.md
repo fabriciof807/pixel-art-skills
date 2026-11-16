@@ -6,6 +6,24 @@ Six skills for turning a 3D model (Blender) into isometric pixel art sprites:
 Based on the pipeline from Mekai Games, "How to Transform a 3D Model Into Pixel Art"
 (https://www.youtube.com/watch?v=Y4uTF3aBTKo).
 
+## Install
+
+With [`skills`](https://github.com/vercel-labs/skills), on any machine:
+
+```bash
+# all six skills, globally (every project)
+npx skills add fabriciof807/pixel-art-skills -g -y
+
+# only one skill
+npx skills add fabriciof807/pixel-art-skills -g -y --skill pixel-art-cleanup
+
+# list what the repo contains
+npx skills add fabriciof807/pixel-art-skills --list
+```
+
+Drop `-g` to install into the current project only. Or copy the `skills/` folders into
+`~/.claude/skills/` by hand.
+
 ## Skills
 
 ### `pixel-art-3d-pipeline`: overview
@@ -108,24 +126,6 @@ repeated for every character in the series.
 - Do not hand-render frames; script the loop.
 - Blender is a serialized resource in practice: one writer at a time, even with several
   agents.
-
-## Install
-
-With [`skills`](https://github.com/vercel-labs/skills), on any machine:
-
-```bash
-# all six skills, globally (every project)
-npx skills add fabriciof807/pixel-art-skills -g -y
-
-# only one skill
-npx skills add fabriciof807/pixel-art-skills -g -y --skill pixel-art-cleanup
-
-# list what the repo contains
-npx skills add fabriciof807/pixel-art-skills --list
-```
-
-Drop `-g` to install into the current project only. Or copy the `skills/` folders into
-`~/.claude/skills/` by hand.
 
 ## Layout
 
